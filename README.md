@@ -2,7 +2,7 @@
 
 **Docx** is a powerful and intuitive web application designed to simplify your document and image processing workflows. Whether you're merging PDFs, removing backgrounds from images with AI, or converting file formats, Docx brings all essential tools into one clean, modern interface.
 
-![Screenshot](./previewImage) <!-- Replace with actual screenshot path -->
+![Screenshot](./previewImage.png) <!-- Replace with actual screenshot path -->
 
 ---
 
