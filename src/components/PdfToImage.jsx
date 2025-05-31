@@ -39,16 +39,17 @@ const PdfToImage = () => {
   };
 
   return (
-    <div className="text-white w-full max-w-3xl mx-auto px-4 py-10">
+    <div className="text-white w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <h1 className="text-3xl font-bold mb-6 text-center">📤 Convert PDF to Images</h1>
 
       <div
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
-        className={`border-2 border-dashed rounded-lg px-64 py-32 text-center transition-all duration-300 ${
-          dragging ? 'border-blue-400 bg-blue-900/10' : 'border-zinc-600'
-        }`}
+        className={`border-2 border-dashed rounded-lg text-center transition-all duration-300
+          px-4 py-16 sm:px-12 sm:py-24 md:px-24 md:py-32
+          ${dragging ? 'border-blue-400 bg-blue-900/10' : 'border-zinc-600'}
+        `}
       >
         <p className="text-lg text-zinc-300 mb-2">Drag & drop a PDF file here</p>
         <p className="text-sm text-zinc-500">or</p>

@@ -4,3 +4,7 @@
 *{
     font-family:  "Space Grotesk", sans-serif;
 }
+
+body, html {
+  overscroll-behavior: none;
+}

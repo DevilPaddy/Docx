@@ -44,14 +44,15 @@ const ImageToPdf = () => {
     <div className="text-white w-full max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mb-6 text-center">🖼️ Convert Images to PDF</h1>
 
+      {/* Drag and Drop Area */}
       <div
         onDrop={handleDrop}
         onDragOver={handleDrag}
         onDragEnter={handleDrag}
         onDragLeave={handleDrag}
-        className={`border-2 border-dashed rounded-lg px-64 py-32 text-center transition-all duration-300 ${
-          dragActive ? 'border-blue-400 bg-blue-900/10' : 'border-zinc-600'
-        }`}
+        className={`border-2 border-dashed rounded-lg w-full text-center transition-all duration-300 
+          ${dragActive ? 'border-blue-400 bg-blue-900/10' : 'border-zinc-600'} 
+          px-4 py-12 sm:px-10 sm:py-16 md:px-20 md:py-24 lg:px-32 lg:py-28`}
       >
         <p className="text-lg text-zinc-300 mb-2">Drag & drop image files here</p>
         <p className="text-sm text-zinc-500">or</p>
@@ -71,8 +72,10 @@ const ImageToPdf = () => {
         />
       </div>
 
+      {/* Error Message */}
       {error && <p className="text-red-400 text-center mt-4">{error}</p>}
 
+      {/* Download Button */}
       {pdfUrl && (
         <div className="text-center mt-6">
           <a

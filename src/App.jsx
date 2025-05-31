@@ -18,7 +18,7 @@ const App = () => {
     <div className="bg-black min-h-screen w-full text-white flex flex-col">
       <Navbar />
 
-      <main className="flex-1 px-4 py-6">
+      <main className="flex-1 px-4 py-6 pt-18">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pdf-merge" element={<PdfMerge />} />
