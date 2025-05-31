@@ -41,7 +41,7 @@ const ImageEnhancer = () => {
   };
 
   return (
-    <div className="text-white w-full px-4 py-10">
+    <div className="text-white w-full max-w-3xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold mb-6 text-center">✨ Enhance Image</h1>
 
       <div

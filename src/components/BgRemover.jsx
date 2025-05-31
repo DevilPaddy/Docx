@@ -68,20 +68,22 @@ const BgRemover = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6">
-      <h1 className="text-4xl font-bold text-blue-700 mb-6 text-center">🧠 AI Background Remover</h1>
+    <div className="text-white w-full max-w-3xl mx-auto px-4 py-10">
+      <h1 className="text-3xl font-bold mb-6 text-center">🧠 AI Background Remover</h1>
 
       <div
-        className={`border-4 border-dashed p-10 rounded-xl w-full max-w-xl transition ${dragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'}`}
+        className={`border-2 border-dashed rounded-lg px-10 py-24 text-center transition-all duration-300 ${
+          dragActive ? 'border-blue-400 bg-blue-900/10' : 'border-zinc-600'
+        }`}
         onDragEnter={handleDrag}
         onDragLeave={handleDrag}
         onDragOver={handleDrag}
         onDrop={handleDrop}
       >
-        <p className="text-gray-600 text-center mb-4">Drag & Drop your image here</p>
+        <p className="text-lg text-zinc-300 mb-2">Drag & Drop your image here</p>
         <button
           onClick={() => fileInputRef.current.click()}
-          className="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700"
+          className="mt-4 px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 transition"
         >
           Or Select Image
         </button>
